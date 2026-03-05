@@ -30,6 +30,12 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    /* ✅ 여기에 추가하세요 */
+    permissions: ['notifications', 'geolocation'], 
+    
+    // 유저 에이전트나 언어 설정이 필요하다면 아래처럼 추가할 수도 있습니다.
+    locale: 'ko-KR',
+    timezoneId: 'Asia/Seoul',
   },
 
   /* Configure projects for major browsers */
