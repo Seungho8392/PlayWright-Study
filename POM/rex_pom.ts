@@ -1,5 +1,7 @@
 import { Page, expect } from '@playwright/test';
 
+
+// 함수 > 클래스로 바뀜
 export class Rex {
   readonly page: Page;
 
@@ -9,6 +11,7 @@ export class Rex {
   constructor(page: Page) {
     this.page = page;
   }
+// 여기까지 
 
   /**
    * ✅ 메인 실행 메서드
