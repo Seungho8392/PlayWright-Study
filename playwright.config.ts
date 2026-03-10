@@ -2,7 +2,13 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+<<<<<<< HEAD
   reporter: [['html', { open: 'always' }]],
+=======
+
+// 1. 리포터 설정 (여기로 이동!)
+reporter: [['html', { open: 'never' }]],
+>>>>>>> ad52935e26d6ada20f61db26accfb1340a0f3d47
   
   use: {
     // 1. 뷰포트 및 브라우저 기본 설정
