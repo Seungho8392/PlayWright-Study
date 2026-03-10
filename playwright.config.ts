@@ -22,8 +22,5 @@ export default defineConfig({
       ]
     }
   },
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> temp-branch
+
