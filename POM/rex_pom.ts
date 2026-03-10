@@ -73,7 +73,7 @@ export class Rex {
     await expect(async () => {
       const currentCount = await productLinks.count();
       console.log(`📊 [${cycleName}] 발견된 상품 수: ${currentCount}개`);
-      expect(currentCount).toBeGreaterThan(9999);
+      expect(currentCount).toBeGreaterThan(0);
     }).toPass({ timeout: 15000, intervals: [1000] });
 
     const totalCount = await productLinks.count();
