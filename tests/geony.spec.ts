@@ -13,16 +13,16 @@ test.use({
 
 test('카카오 이모티콘 샵 통합 테스트 실행', async ({ page }) => {
   const rex = new Rex(page);
-<<<<<<< HEAD
+
   // 1. 초기 페이지 진입
   await page.goto('https://e.kakao.com/item/', { waitUntil: 'networkidle' });
-=======
+
   // 테스트 실행 시간을 2분으로 설정
   test.setTimeout(120000);
   // 1. 초기 페이지 진입
   await page.goto('https://e.kakao.com/item/style', { waitUntil: 'networkidle' });
   
->>>>>>> c035ff7296daf8a52f7186631329c17b9eeefa3e
+
   // 2. Rex 클래스에게 모든 실행 권한을 위임 (반복문 포함)
   await rex.runEmoticonTest();
 });
