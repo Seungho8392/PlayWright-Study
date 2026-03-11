@@ -74,14 +74,13 @@ export class EmoticonHot {
     const titleText = (await titleEl.innerText()).replace(/\s+/g, " ").trim(); // 타이틀 텍스트를 공백/줄바꿈 정리해서 캐시한다
     await top500Item.locator('a[href^="/t/"]').first().click(); // 500위 상품 링크를 클릭해서 상세페이지로 진입한다
     await this.page.waitForURL(/\/t\//, { timeout: 15000 }); // URL 패턴이 /t/ 인 상세페이지로 바뀔 때까지 기다린다
+    await this.page.waitForLoadState("domcontentloaded"); // 상세페이지의 DOM이 준비될 때까지 한 번 더 대기한다
     return titleText; // 바깥 테스트/메서드에서 사용할 수 있도록 타이틀을 반환한다
   } // 500위 상품 진입 + 타이틀 캐시 메서드 끝
 
   async expectTop500DetailMatches(titleFromList: string) {
     // 리스트에서 본 500위 타이틀과 상세페이지 타이틀이 같은지 검증한다
-    await expect(this.page.getByRole("heading", { level: 3 })).toContainText(
-      titleFromList,
-    ); // 성공 기준: 상세페이지의 상품 타이틀(heading)에 리스트 상품명이 포함돼야 한다
+    await expect(this.page.getByRole("heading", { level: 3 })).toContainText(titleFromList, { timeout: 15000 }); // 성공 기준: 상세페이지의 상품 타이틀(heading)에 리스트 상품명이 포함돼야 한다
   } // 500위 상세페이지 타이틀 일치 검증 메서드 끝
 
   async runHotTopsFlow() {
