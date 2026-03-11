@@ -12,7 +12,7 @@ export default defineConfig({
   use: {
     // 1. 뷰포트 및 브라우저 기본 설정
     viewport: { width: 2560, height: 1440 },
-    headless: false,  // 💡 화면을 보려면 false로 두는 게 좋습니다! (기존 true였음)
+    headless: true,  // 💡 화면을 보려면 false로 두는 게 좋습니다! (기존 true였음)
     // video: 'retain-on-failure',   // 실패 시 영상 저장!
     video: 'on',
     screenshot: 'only-on-failure', // 실패 시 스크린샷 찰칵!
