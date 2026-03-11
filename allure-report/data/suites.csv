@@ -1,4 +1,6 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","29976","카카오 이모티콘샵 인기 1위+500위 상품 진입/상세 검증","chromium","2026-03-11","passed","2026-03-11","","shannon_hot.spec.ts","",""
+"","52192","카카오 이모티콘 샵 통합 테스트 실행","chromium","2026-03-11","passed","2026-03-11","","geony.spec.ts","",""
 "","30076","카카오 이모티콘샵 인기 1위 상품 진입/상세 검증","chromium","2026-03-11","broken","2026-03-11","","shannon_hot.spec.ts","",""
-"","9041","카카오 이모티콘 샵 신규 이동 테스트","chromium","2026-03-11","passed","2026-03-11","","woody_test.spec.ts","",""
+"","2","카카오 이모티콘 샵 신규 이동 테스트","chromium","2026-03-11","failed","2026-03-11","","woody_test.spec.ts","",""
+"","29976","카카오 이모티콘샵 인기 1위+500위 상품 진입/상세 검증","chromium","2026-03-11","passed","2026-03-11","","shannon_hot.spec.ts","",""
+"","30166","카카오 이모티콘 샵 유지보수 강화 시나리오","chromium","2026-03-11","broken","2026-03-11","","harry_test.spec.ts","",""

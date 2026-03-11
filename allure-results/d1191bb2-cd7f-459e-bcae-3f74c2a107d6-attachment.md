@@ -1,0 +1,339 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - link "본문 바로가기" [ref=e4] [cursor=pointer]:
+      - /url: "#kakaoContent"
+    - link "메뉴 바로가기" [ref=e5] [cursor=pointer]:
+      - /url: "#side_open"
+  - generic [ref=e6]:
+    - link "재미있는 이모티콘 무제한 즐기기 띠배너이미지" [ref=e8] [cursor=pointer]:
+      - /url: https://e.kakao.com/my/product/001?t_src=emoticon&t_ch=webstore&t_obj=web_gnb_banner
+      - generic [ref=e9]: 재미있는 이모티콘 무제한 즐기기
+      - img "띠배너이미지" [ref=e11]
+    - button "띠배너닫기" [ref=e12] [cursor=pointer]
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - button "사이드메뉴 열기" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: 사이드메뉴 열기
+      - heading "kakao emoticon shop" [level=1] [ref=e18]:
+        - link "kakao emoticon shop" [ref=e19] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e20]: kakao emoticon shop
+      - button "검색하기" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: 검색하기
+      - button "사용자" [ref=e23] [cursor=pointer]:
+        - img "사용자" [ref=e26]
+    - navigation [ref=e27]:
+      - heading "kakao emoticon shop 메인메뉴" [level=2]
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "홈" [ref=e30] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e31]:
+          - link "신규" [ref=e32] [cursor=pointer]:
+            - /url: /item/new
+        - listitem [ref=e33]:
+          - link "인기" [ref=e34] [cursor=pointer]:
+            - /url: /item/hot
+        - listitem [ref=e35]:
+          - link "스타일" [ref=e36] [cursor=pointer]:
+            - /url: /item/style
+  - generic [ref=e38]:
+    - generic [ref=e40]:
+      - strong: 프로모션 및 이벤트 배너
+      - generic [ref=e41]:
+        - generic [ref=e43]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: https://e.kakao.com/my/product/001?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner
+          - link "링크배너" [ref=e49] [cursor=pointer]:
+            - /url: https://e.kakao.com/store/grouplist/mkt_03mdpick_260310?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner
+          - link [ref=e52] [cursor=pointer]:
+            - /url: https://e.kakao.com/my/product/001?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner
+          - link [ref=e55] [cursor=pointer]:
+            - /url: https://e.kakao.com/store/grouplist/mkt_03mdpick_260310?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner
+          - link [ref=e58] [cursor=pointer]:
+            - /url: https://e.kakao.com/my/product/001?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - button "NaN 번째 콘텐츠" [ref=e62] [cursor=pointer]:
+              - generic: NaN 번째 콘텐츠
+          - listitem [ref=e63]:
+            - button "NaN 번째 콘텐츠" [ref=e65] [cursor=pointer]:
+              - generic: NaN 번째 콘텐츠
+    - generic [ref=e66]:
+      - heading "신규 이모티콘" [level=3] [ref=e67]:
+        - link "신규 이모티콘" [ref=e68] [cursor=pointer]:
+          - /url: /item/new
+          - text: 신규 이모티콘
+      - generic [ref=e71]:
+        - link "친절한 토끼 브라우니가 왔어요!" [ref=e73] [cursor=pointer]:
+          - /url: /t/friendly-rabbit-brownie
+          - strong [ref=e75]:
+            - generic [ref=e76]: 친절한 토끼 브라우니가 왔어요!
+        - link "소리켜짐 꽁냥꽁냥 쥐방울" [ref=e78] [cursor=pointer]:
+          - /url: /t/lovey-dovey-babygirl
+          - strong [ref=e80]:
+            - generic [ref=e81]: 소리켜짐
+            - generic [ref=e82]: 꽁냥꽁냥 쥐방울
+        - link "1도 안죄숭한 원숭이" [ref=e84] [cursor=pointer]:
+          - /url: /t/not-sorry-monkey
+          - strong [ref=e86]:
+            - generic [ref=e87]: 1도 안죄숭한 원숭이
+        - link "도로롱과 춘식이의 하루" [ref=e89] [cursor=pointer]:
+          - /url: /t/a-day-with-doro-choonsik
+          - strong [ref=e91]:
+            - generic [ref=e92]: 도로롱과 춘식이의 하루
+        - link "집에서 뭐해, 나룽이??" [ref=e94] [cursor=pointer]:
+          - /url: /t/what-are-you-doing-at-home-naruni
+          - strong [ref=e96]:
+            - generic [ref=e97]: 집에서 뭐해, 나룽이??
+        - link "소리켜짐 꽁냥꽁냥 대박이" [ref=e99] [cursor=pointer]:
+          - /url: /t/lovey-dovey-babyboy
+          - strong [ref=e101]:
+            - generic [ref=e102]: 소리켜짐
+            - generic [ref=e103]: 꽁냥꽁냥 대박이
+        - link "미소아라티티의 멍뭉미 가득한 일상" [ref=e105] [cursor=pointer]:
+          - /url: /t/fluffy-everyday-with-miso-ara-titi
+          - strong [ref=e107]:
+            - generic [ref=e108]: 미소아라티티의 멍뭉미 가득한 일상
+        - link "고양이 확대 3" [ref=e110] [cursor=pointer]:
+          - /url: /t/close-up-of-cat-3
+          - strong [ref=e112]:
+            - generic [ref=e113]: 고양이 확대 3
+        - link "짝귀, 짝멍이" [ref=e115] [cursor=pointer]:
+          - /url: /t/jjakmeongee
+          - strong [ref=e117]:
+            - generic [ref=e118]: 짝귀, 짝멍이
+        - link "방구대장 프린세스" [ref=e120] [cursor=pointer]:
+          - /url: /t/boom-boom-princess
+          - strong [ref=e122]:
+            - generic [ref=e123]: 방구대장 프린세스
+    - generic [ref=e124]:
+      - heading "인기 이모티콘" [level=3] [ref=e125]:
+        - link "인기 이모티콘" [ref=e126] [cursor=pointer]:
+          - /url: /item/hot
+          - text: 인기 이모티콘
+      - generic [ref=e128]:
+        - list [ref=e129]:
+          - listitem [ref=e130]:
+            - generic [ref=e131]: "1"
+            - link "듀.. 가나디 6 짤쓸사람" [ref=e133] [cursor=pointer]:
+              - /url: /t/dyu-ganadi-6
+              - generic [ref=e134]:
+                - strong [ref=e135]:
+                  - generic [ref=e136]: 듀.. 가나디 6
+                - generic [ref=e137]: 짤쓸사람
+            - link "듀.. 가나디 6이미지" [ref=e138] [cursor=pointer]:
+              - /url: /t/dyu-ganadi-6
+              - img "듀.. 가나디 6이미지" [ref=e140]
+          - listitem [ref=e141]:
+            - generic [ref=e142]: "2"
+            - link "꺅두기 3 툴라" [ref=e144] [cursor=pointer]:
+              - /url: /t/kkyakdugi-3
+              - generic [ref=e145]:
+                - strong [ref=e146]:
+                  - generic [ref=e147]: 꺅두기 3
+                - generic [ref=e148]: 툴라
+            - link "꺅두기 3이미지" [ref=e149] [cursor=pointer]:
+              - /url: /t/kkyakdugi-3
+              - img "꺅두기 3이미지" [ref=e151]
+          - listitem [ref=e152]:
+            - generic [ref=e153]: "3"
+            - link "포차코랑 같이 놀자! 산리오" [ref=e155] [cursor=pointer]:
+              - /url: /t/come-play-with-pochacco
+              - generic [ref=e156]:
+                - strong [ref=e157]:
+                  - generic [ref=e158]: 포차코랑 같이 놀자!
+                - generic [ref=e159]: 산리오
+            - link "포차코랑 같이 놀자!이미지" [ref=e160] [cursor=pointer]:
+              - /url: /t/come-play-with-pochacco
+              - img "포차코랑 같이 놀자!이미지" [ref=e162]
+          - listitem [ref=e163]:
+            - generic [ref=e164]: "4"
+            - link "듀.. 가나디 5 짤쓸사람" [ref=e166] [cursor=pointer]:
+              - /url: /t/dyu-ganadi-5
+              - generic [ref=e167]:
+                - strong [ref=e168]:
+                  - generic [ref=e169]: 듀.. 가나디 5
+                - generic [ref=e170]: 짤쓸사람
+            - link "듀.. 가나디 5이미지" [ref=e171] [cursor=pointer]:
+              - /url: /t/dyu-ganadi-5
+              - img "듀.. 가나디 5이미지" [ref=e173]
+          - listitem [ref=e174]:
+            - generic [ref=e175]: "5"
+            - link "데뚜가쟈! 애기 뽀짝커플 (남친꺼) 팝키" [ref=e177] [cursor=pointer]:
+              - /url: /t/lets-date-adorable-couple-bf
+              - generic [ref=e178]:
+                - strong [ref=e179]:
+                  - generic [ref=e180]: 데뚜가쟈! 애기 뽀짝커플 (남친꺼)
+                - generic [ref=e181]: 팝키
+            - link "데뚜가쟈! 애기 뽀짝커플 (남친꺼)이미지" [ref=e182] [cursor=pointer]:
+              - /url: /t/lets-date-adorable-couple-bf
+              - img "데뚜가쟈! 애기 뽀짝커플 (남친꺼)이미지" [ref=e184]
+        - list [ref=e185]:
+          - listitem [ref=e186]:
+            - generic [ref=e187]: "6"
+            - link "오늘도 포근한 하루~ 툰스" [ref=e189] [cursor=pointer]:
+              - /url: /t/a-cozy-haroo-today-as-well
+              - generic [ref=e190]:
+                - strong [ref=e191]:
+                  - generic [ref=e192]: 오늘도 포근한 하루~
+                - generic [ref=e193]: 툰스
+            - link "오늘도 포근한 하루~이미지" [ref=e194] [cursor=pointer]:
+              - /url: /t/a-cozy-haroo-today-as-well
+              - img "오늘도 포근한 하루~이미지" [ref=e196]
+          - listitem [ref=e197]:
+            - generic [ref=e198]: "7"
+            - link "이 바보 몽숭이야! 3 편살" [ref=e200] [cursor=pointer]:
+              - /url: /t/silly-monkie-3
+              - generic [ref=e201]:
+                - strong [ref=e202]:
+                  - generic [ref=e203]: 이 바보 몽숭이야! 3
+                - generic [ref=e204]: 편살
+            - link "이 바보 몽숭이야! 3이미지" [ref=e205] [cursor=pointer]:
+              - /url: /t/silly-monkie-3
+              - img "이 바보 몽숭이야! 3이미지" [ref=e207]
+          - listitem [ref=e208]:
+            - generic [ref=e209]: "8"
+            - link "데뚜가쟈! 애기 뽀짝커플 (여친꺼) 팝키" [ref=e211] [cursor=pointer]:
+              - /url: /t/lets-date-adorable-couple-gf
+              - generic [ref=e212]:
+                - strong [ref=e213]:
+                  - generic [ref=e214]: 데뚜가쟈! 애기 뽀짝커플 (여친꺼)
+                - generic [ref=e215]: 팝키
+            - link "데뚜가쟈! 애기 뽀짝커플 (여친꺼)이미지" [ref=e216] [cursor=pointer]:
+              - /url: /t/lets-date-adorable-couple-gf
+              - img "데뚜가쟈! 애기 뽀짝커플 (여친꺼)이미지" [ref=e218]
+          - listitem [ref=e219]:
+            - generic [ref=e220]: "9"
+            - link "잔망 루피 16 잔망 루피" [ref=e222] [cursor=pointer]:
+              - /url: /t/zanmang-loopy-ver16
+              - generic [ref=e223]:
+                - strong [ref=e224]:
+                  - generic [ref=e225]: 잔망 루피 16
+                - generic [ref=e226]: 잔망 루피
+            - link "잔망 루피 16이미지" [ref=e227] [cursor=pointer]:
+              - /url: /t/zanmang-loopy-ver16
+              - img "잔망 루피 16이미지" [ref=e229]
+          - listitem [ref=e230]:
+            - generic [ref=e231]: "10"
+            - link "치왈왈 4 그모" [ref=e233] [cursor=pointer]:
+              - /url: /t/ruff-ruff-chihuahuas-life-4
+              - generic [ref=e234]:
+                - strong [ref=e235]:
+                  - generic [ref=e236]: 치왈왈 4
+                - generic [ref=e237]: 그모
+            - link "치왈왈 4이미지" [ref=e238] [cursor=pointer]:
+              - /url: /t/ruff-ruff-chihuahuas-life-4
+              - img "치왈왈 4이미지" [ref=e240]
+    - generic [ref=e242]:
+      - heading "스타일" [level=3] [ref=e243]:
+        - link "스타일" [ref=e244] [cursor=pointer]:
+          - /url: /item/style
+          - text: 스타일
+      - generic [ref=e246]:
+        - 'link "#일러스트 #비비드" [ref=e248] [cursor=pointer]':
+          - /url: /style/groups/472
+          - generic [ref=e249]:
+            - strong [ref=e250]: "#일러스트"
+            - generic [ref=e251]: "#비비드"
+        - generic [ref=e253]:
+          - link "사랑으로 지구정복 하꾸다요 상세" [ref=e255] [cursor=pointer]:
+            - /url: /t/red-bear-love-boom
+          - link "꿈에서 본 호랑이 상세" [ref=e257] [cursor=pointer]:
+            - /url: /t/dream-tiger
+          - link "호랑이 형님 왔다! 이리오너라~! 상세" [ref=e259] [cursor=pointer]:
+            - /url: /t/tiger-big-brother
+          - link "이상한 양말 고양이들 상세" [ref=e261] [cursor=pointer]:
+            - /url: /t/weird-cats-wearing-socks
+          - link "스케이터 존 상세" [ref=e263] [cursor=pointer]:
+            - /url: /t/skater-john
+      - generic [ref=e264]:
+        - 'link "#재밌는 #길쭉길쭉한" [ref=e266] [cursor=pointer]':
+          - /url: /style/groups/456
+          - generic [ref=e267]:
+            - strong [ref=e268]: "#재밌는"
+            - generic [ref=e269]: "#길쭉길쭉한"
+        - generic [ref=e271]:
+          - link "봄이 좋은 곰쿤!! 상세" [ref=e273] [cursor=pointer]:
+            - /url: /t/gomkhun-who-likes-spring
+          - link "리액션광인 다람찌 상세" [ref=e275] [cursor=pointer]:
+            - /url: /t/reaction-squirrel
+          - link "종이인간 1호 상세" [ref=e277] [cursor=pointer]:
+            - /url: /t/golaehoechungs-daily-life
+          - link "오늘도 시크한 을시년스러운 여자 상세" [ref=e279] [cursor=pointer]:
+            - /url: /t/daily-life-of-gloomy-girl-ver-25
+          - link "까시애옹이3 상세" [ref=e281] [cursor=pointer]:
+            - /url: /t/a-skinny-cat-3
+      - generic [ref=e282]:
+        - 'link "#메시지 #다정한_메시지" [ref=e284] [cursor=pointer]':
+          - /url: /style/groups/467
+          - generic [ref=e285]:
+            - strong [ref=e286]: "#메시지"
+            - generic [ref=e287]: "#다정한_메시지"
+        - generic [ref=e289]:
+          - link "꽃으로 물든 봄편지 상세" [ref=e291] [cursor=pointer]:
+            - /url: /t/a-spring-letter-in-bloom
+            - generic [ref=e292]: 큰 이모티콘
+          - link "따스한 마음이 전해지는 꽃티콘 상세" [ref=e294] [cursor=pointer]:
+            - /url: /t/flowers-that-convey-a-warm-heart
+            - generic [ref=e295]: 큰 이모티콘
+          - link "기여워 죽을때 보내는 칭찬 메세지 상세" [ref=e297] [cursor=pointer]:
+            - /url: /t/a-message-you-send-when-youre-cute
+          - link "감성 한 스푼, 따뜻한 안부 한 잔 상세" [ref=e299] [cursor=pointer]:
+            - /url: /t/a-warm-cup-of-kind-words
+          - link "우리 톡방에 온 걸 환영해 2 상세" [ref=e301] [cursor=pointer]:
+            - /url: /t/welcome-to-our-chat-room-2
+            - generic [ref=e302]: 큰 이모티콘
+  - generic [ref=e304]:
+    - heading "서비스 이용정보" [level=2]
+    - generic [ref=e305]:
+      - link "이용약관" [ref=e306] [cursor=pointer]:
+        - /url: /policy
+      - link "유료이용안내" [ref=e307] [cursor=pointer]:
+        - /url: https://billing-web.kakao.com/kbill/terms/service
+      - link "개인정보처리방침" [ref=e308] [cursor=pointer]:
+        - /url: https://www.kakao.com/policy/privacy
+        - strong [ref=e309]: 개인정보처리방침
+      - link "기업고객" [ref=e310] [cursor=pointer]:
+        - /url: https://bizemoticon.kakao.com
+      - link "문의하기" [ref=e311] [cursor=pointer]:
+        - /url: https://cs.kakao.com/requests?service=94&locale=ko
+      - link "공정위사업자정보" [ref=e312] [cursor=pointer]:
+        - /url: http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208147521
+      - link "(주) 카카오" [ref=e313] [cursor=pointer]:
+        - /url: https://www.kakaocorp.com/page/
+        - strong [ref=e314]: (주) 카카오
+      - paragraph [ref=e315]: 카카오 이모티콘샵에서 판매되는 콘텐츠의 저작권은 콘텐츠 제공자에게 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 처벌될 수 있습니다.
+    - generic [ref=e316]:
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - term [ref=e319]: 대표
+          - definition [ref=e320]: 정신아
+          - term [ref=e321]: 사업자등록번호
+          - definition [ref=e322]:
+            - generic [ref=e323]: 120-81-47521
+        - generic [ref=e324]:
+          - term [ref=e325]: 통신판매업신고번호
+          - definition [ref=e326]: 제2015-제주아라-0032호
+      - generic [ref=e327]:
+        - generic [ref=e328]:
+          - term [ref=e329]: 주소
+          - definition [ref=e330]:
+            - text: 제주특별자치도 제주시 첨단로
+            - generic [ref=e331]: "242"
+            - text: (영평동)
+        - generic [ref=e332]:
+          - term [ref=e333]: 호스팅사업자
+          - definition [ref=e334]: (주)카카오
+          - term [ref=e335]: 고객센터
+          - definition [ref=e336]:
+            - generic [ref=e337]: 1577-3754
+        - generic [ref=e338]:
+          - term [ref=e339]: 메일
+          - definition [ref=e340]:
+            - generic [ref=e341]: help.notice@kakaocorp.com
+    - button "맨 위로" [ref=e343] [cursor=pointer]: 맨 위로
+```
