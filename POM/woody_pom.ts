@@ -48,4 +48,10 @@ export class KakaoEmoticonPage_New {
             await this.page.waitForTimeout(2000);
         });
     }
+
+    // spec에서 한 줄로 호출할 수 있게 전체 플로우를 묶는다
+    async runNewFlow() {
+        await this.clickNewTab1();
+        await this.clickNewTab2();
+    }
 }

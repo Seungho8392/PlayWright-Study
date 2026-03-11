@@ -8,7 +8,9 @@ test('카카오 이모티콘 샵 신규 이동 테스트', async ({ page }) => {
     // 2. 메인 접속
     await page.goto('https://e.kakao.com/item/', { waitUntil: 'networkidle' });
 
-    // 📢 3. 이제 '신규' 버튼 눌러라
-    await woody.clickNewTab1();
-    await woody.clickNewTab2();
+    // 📢 3. 시나리오 한 줄 호출
+    await woody.runNewFlow();
+
+    // 4. 이모티콘 홈으로 이동
+    await page.goto('https://e.kakao.com/', { waitUntil: 'networkidle' });
 });
