@@ -4,7 +4,10 @@ export default defineConfig({
   testDir: './tests',
 
   // 1. 리포터 설정 (항상 열기)
-  reporter: [['html', { open: 'always' }]],
+  reporter: [
+    ['html', { open: 'always' }], 
+    ['allure-playwright', { outputFolder: 'allure-results' }]
+  ],
 
   use: {
     // 1. 뷰포트 및 브라우저 기본 설정
