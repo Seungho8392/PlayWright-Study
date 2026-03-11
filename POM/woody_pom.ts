@@ -16,7 +16,7 @@ export class KakaoEmoticonPage_New {
             await expect(this.page).toHaveURL('https://e.kakao.com/item/new'); //해당 주소가 맞는지
             console.log(`✅ 신규 이동 완료: ${this.page.url()}`);
         } 
-        catch { // 위 expect가 실패했을 때만 이쪽으로 옵니다.
+        catch  { // 위 expect가 실패했을 때만 이쪽으로 옵니다.
             throw new Error(`❌ 이동 실패! (현재 주소: ${this.page.url()})`); // new Error 이라는 변수를 새롭게 만들어서 현재 위치 추출 
         // 2초 대기
         }
