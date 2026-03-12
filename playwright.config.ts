@@ -6,7 +6,9 @@ export default defineConfig({
   // 1. 리포터 설정 (항상 열기)
   reporter: [
     ['html', { open: 'always' }], 
-    ['allure-playwright', { outputFolder: 'allure-results' }]
+    ['allure-playwright', { outputFolder: 'allure-results' }],
+    ['list'],
+    ['./slack-reporter.js', {}]
   ],
 
   use: {

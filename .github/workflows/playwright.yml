@@ -42,13 +42,67 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: playwright-report
-
+     
+     
     # 3. 🚨 슬랙 알림 (들여쓰기 수정 완료)
-    - name: Slack Notification on Failure
-      if: failure()
-      uses: rtCamp/action-slack-notify@v2
+    # - name: Slack Notification on Failure
+    # if: failure()
+    # uses: rtCamp/action-slack-notify@v2
+    # env:
+    #   SLACK_WEBHOOK: ${{ secrets.GEONY_SLACK_WEBHOOK_URL }}
+    #   SLACK_COLOR: '#ff0000'
+    #   SLACK_MESSAGE: '❌ 카카오 이모티콘 테스트 실패! 리포트 확인: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/'
+    #   SLACK_TITLE: 'Playwright Test Failed'
+     
+    # 4. 상세 슬랙 알림 전송 (rtCamp 대신 직접 Webhook 호출)
+    - name: Send Detailed Slack Notification
+      if: always() # 성공/실패 상관없이 결과 보고
+      run: |
+        # 테스트 결과에 따라 이모지와 색상 결정
+        if [ "${{ job.status }}" = "success" ]; then
+          COLOR="#2EB67D"
+          ICON="✅"
+          RESULT_TEXT="테스트 성공"
+        else
+          COLOR="#E01E5A"
+          ICON="🚨"
+          RESULT_TEXT="테스트 실패"
+        fi
+
+        curl -X POST -H 'Content-type: application/json' \
+        --data "{
+          \"attachments\": [
+            {
+              \"color\": \"$COLOR\",
+              \"blocks\": [
+                {
+                  \"type\": \"header\",
+                  \"text\": {
+                    \"type\": \"plain_text\",
+                    \"text\": \"$ICON Playwright Test Result\",
+                    \"emoji\": true
+                  }
+                },
+                {
+                  \"type\": \"section\",
+                  \"text\": {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*결과:* $RESULT_TEXT\n*리포트 확인:* <https://Seungho8392.github.io/Playwright-Study/|GitHub Pages Report>\"
+                  }
+                },
+                {
+                  \"type\": \"context\",
+                  \"elements\": [
+                    {
+                      \"type\": \"mrkdwn\",
+                      \"text\": \"*Triggered by:* ${{ github.actor }} | *Branch:* \`${{ github.ref_name }}\`\"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }" $SLACK_WEBHOOK_URL
       env:
-        SLACK_WEBHOOK: ${{ secrets.GEONY_SLACK_WEBHOOK_URL }}
-        SLACK_COLOR: '#ff0000'
-        SLACK_MESSAGE: '❌ 카카오 이모티콘 테스트 실패! 리포트 확인: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/'
-        SLACK_TITLE: 'Playwright Test Failed'
+        # ⚠️ 중요: 아래 이름을 본인의 Secret 이름과 맞춰주세요 (GEONY_SLACK_WEBHOOK_URL 등)
+        SLACK_WEBHOOK_URL: ${{ secrets.GEONY_SLACK_WEBHOOK_URL }}
