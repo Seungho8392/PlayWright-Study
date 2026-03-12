@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { KakaoEmoticonPage_New } from '../POM/woody_pom.ts';
+import { KakaoEmoticonPage_New } from '../POM/woody_pom';
 
 test('카카오 이모티콘 샵 신규 이동 테스트', async ({ page }) => {
     // 1. 전문가(클래스) 소환

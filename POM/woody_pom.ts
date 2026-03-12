@@ -23,7 +23,7 @@ export class KakaoEmoticonPage_New {
         
         await this.page.waitForTimeout(2000);
     }
-    
+
 
     // 첫번째 아이템 진입
     async clickNewTab2() {
